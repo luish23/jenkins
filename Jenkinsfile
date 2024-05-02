@@ -4,7 +4,7 @@
 //     new groovy.json.JsonSlurperClassic().parseText(json)
 // }
 pipeline {
-    agent { label 'principal' }
+    agent any
     parameters {
         string(name: 'name_container', defaultValue: 'proyecto-qa', description: 'nombre del docker')
         string(name: 'name_imagen', defaultValue: 'iproyecto-qa', description: 'nombre de la imagen')
